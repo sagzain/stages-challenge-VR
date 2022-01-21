@@ -1912,6 +1912,11 @@ MonoBehaviour:
     m_MaintainRotationOffset: 0
   m_SourceObjectsGUIToggle: 1
   m_SettingsGUIToggle: 0
+--- !u!1 &1313823827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2128847927404691406, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
+  m_PrefabInstance: {fileID: 1688907341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1375763804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,10 +2342,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1608785746}
     m_Modifications:
-    - target: {fileID: 2128847927397885450, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2128847927404691406, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
       propertyPath: m_Name
       value: FlareGun
@@ -2398,18 +2399,6 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2128847927405175790, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2128847927405175790, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.029999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 2128847927405175790, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 2128847927405175790, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.16300002
       objectReference: {fileID: 0}
@@ -2437,22 +2426,42 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.05283451
       objectReference: {fileID: 0}
-    - target: {fileID: 2128847927405175790, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2128847927405175790, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -170.205
-      objectReference: {fileID: 0}
-    - target: {fileID: 2128847927405175790, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -76.462
-      objectReference: {fileID: 0}
     - target: {fileID: 8358770805042083245, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 632387198}
+    - target: {fileID: 8358770805042083245, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358770805042083245, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358770805042083245, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358770805042083245, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1313823827}
+    - target: {fileID: 8358770805042083245, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358770805042083245, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358770805042083245, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1313823827}
+    - target: {fileID: 8358770805042083245, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cef32d1ce48fcdf4183edd03a8cb78ed, type: 3}
 --- !u!1 &1724499201
