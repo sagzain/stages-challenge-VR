@@ -48,5 +48,16 @@ public class ShotBehaviour : MonoBehaviour
         yield return new WaitForSeconds(_timeToDespawn);
         Destroy(gameObject);
     }
+    
+    private void OnCollisionEnter(Collision other) 
+    {
+        GameObject go = other.collider.gameObject;
+        Enemy enemy = go.GetComponentInParent<Enemy>();
+
+        if(go.layer == 9 | go.layer == 10)
+        {
+            enemy.Death(go.layer);
+        }
+    }
 }
 
