@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6810664343425096006}
   - component: {fileID: 7172945591769457471}
   - component: {fileID: 5925290352384388906}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Visual Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 7169759476192946623}
   - component: {fileID: 5668944914864478238}
   - component: {fileID: 1357262069885697248}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 8326887106750715275}
   - component: {fileID: 8326887106755077611}
   - component: {fileID: 8326887106741532811}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

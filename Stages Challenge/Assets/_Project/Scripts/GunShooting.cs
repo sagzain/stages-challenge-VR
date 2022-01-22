@@ -19,6 +19,7 @@ public class GunShooting : MonoBehaviour
     private GameObject _bullet;
     protected int _currentAmmo;
     protected bool _canShoot;
+    private Animator _animator;
     protected AudioSource _audioSource; 
 
     void Awake()
@@ -26,13 +27,14 @@ public class GunShooting : MonoBehaviour
         _canShoot = true;
         _audioSource = GetComponent<AudioSource>();
         _currentAmmo = _ammo;   
+        _animator = GetComponent<Animator>();
     }
 
     void Start()
     {
         _bullet = Instantiate(_bulletPrefab, _output.position, _output.rotation);
         _bullet.transform.SetParent(_output);
-        // _bullet.transform.localPosition = _bulletPrefab.transform.position;
+        _bullet.transform.localPosition = Vector3.zero;
         // _bullet.transform.localRotation = _bulletPrefab.transform.rotation;
     }
 
@@ -41,6 +43,7 @@ public class GunShooting : MonoBehaviour
         if(_canShoot)
         {
             PlaySound(_shootSound);
+            _animator.SetTrigger("Fire");
             _bullet.GetComponent<ShotBehaviour>().Fire();
             _currentAmmo--;
 

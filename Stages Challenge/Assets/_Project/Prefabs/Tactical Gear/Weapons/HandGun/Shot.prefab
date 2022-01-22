@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1211821429734582860}
   - component: {fileID: 8255825267456387100}
   - component: {fileID: 5963029234165533635}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 8541215488427444856}
   - component: {fileID: 3072908906671164326}
   - component: {fileID: 1443403762563548000}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 8837510424512376966}
   - component: {fileID: 5596809993497639734}
   - component: {fileID: 7747444753772965184}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Visual Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

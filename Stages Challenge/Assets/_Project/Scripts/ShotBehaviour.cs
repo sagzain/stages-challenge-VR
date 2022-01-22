@@ -15,6 +15,7 @@ public class ShotBehaviour : MonoBehaviour
     [SerializeField] private int _timeToDespawn = 5;
     
     private bool _isFired;
+    private Rigidbody _rigidbody;
     private AudioSource _audioSource;
 
     void Awake()
@@ -22,6 +23,9 @@ public class ShotBehaviour : MonoBehaviour
         _isFired = false;
         _visualEffect.Stop();
         _audioSource = GetComponent<AudioSource>();
+            
+        try{_rigidbody = GetComponent<Rigidbody>();}catch{}
+       
     }
     
     void Update()
@@ -39,7 +43,8 @@ public class ShotBehaviour : MonoBehaviour
         if(_sound) _audioSource.PlayOneShot(_sound);
         _visualEffect.Play();
         _isFired = true;
-
+        if(_rigidbody) _rigidbody.isKinematic = false;
+        
         StartCoroutine(Despawn());
     }
 
@@ -57,6 +62,7 @@ public class ShotBehaviour : MonoBehaviour
         if(go.layer == 9 | go.layer == 10)
         {
             enemy.Death(go.layer);
+            Destroy(gameObject);
         }
     }
 }
