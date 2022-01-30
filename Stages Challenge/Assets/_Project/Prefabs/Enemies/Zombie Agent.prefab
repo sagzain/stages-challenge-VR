@@ -36,7 +36,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _points: 100
   _timeToDespawn: 2
-  _target: {fileID: 0}
   _movementSpeed: 1
 --- !u!1001 &8287536431261130177
 PrefabInstance:
@@ -48,6 +47,18 @@ PrefabInstance:
     - target: {fileID: 2270883068362173470, guid: d3ab6d285a49b4643aae2a57e863b3e2, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270883068362173470, guid: d3ab6d285a49b4643aae2a57e863b3e2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270883068362173470, guid: d3ab6d285a49b4643aae2a57e863b3e2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270883068362173470, guid: d3ab6d285a49b4643aae2a57e863b3e2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2270883068362173470, guid: d3ab6d285a49b4643aae2a57e863b3e2, type: 3}
       propertyPath: m_LocalPosition.x

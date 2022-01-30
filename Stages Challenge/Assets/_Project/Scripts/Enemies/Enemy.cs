@@ -1,9 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 [RequireComponent(typeof(Animator))]
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, ISpawnable
 {
     [SerializeField] private int _points;
     [Range(2,10)]
@@ -38,8 +38,13 @@ public class Enemy : MonoBehaviour
 
     IEnumerator Despawn()
     {
-        yield return new WaitForSeconds(_timeToDespawn);
-        Destroy(gameObject);
+        //Código DOTween para hacer animación de salida
+        Sequence tweenSequence = DOTween.Sequence();
+        tweenSequence.Append(transform.DOScale(Vector3.zero, _timeToDespawn));
+        
+        yield return tweenSequence.Play().WaitForCompletion();
+
+        PoolManager.Instance.Despawn(this.gameObject);
     }
 
     void PlayDeathHeadshot()
@@ -50,5 +55,19 @@ public class Enemy : MonoBehaviour
     void PlayDeathBodyshot()
     {
         _animator.SetTrigger("Bodyshot");
+    }
+
+    // Implementations of the methods from ISpawneable
+
+    public void OnSpawn()
+    {
+        //Codigo DOTween para hacer animación de entrada
+        transform.localScale = Vector3.zero;
+        transform.DOScale(Vector3.one, 1f).OnComplete(() => transform.localScale = Vector3.one);
+    }
+
+    public void OnDespawn()
+    {
+        //  Manda el evento para sumar puntos
     }
 }
