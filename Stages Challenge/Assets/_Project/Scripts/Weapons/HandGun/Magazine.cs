@@ -28,8 +28,6 @@ public class Magazine : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log(other.collider.gameObject.name);
-
         if(other.collider.gameObject.name == "Floor")
         {
             transform.SetParent(null);

@@ -9,7 +9,7 @@ public class HandGun : Weapon
 
     void Start()
     {
-        _currentMagazine = _ammoSocket.firstInteractableSelected.transform.gameObject.GetComponent<Magazine>();
+        try {_currentMagazine = _ammoSocket.firstInteractableSelected.transform.gameObject.GetComponent<Magazine>();}catch{}
         _ammoSocket.selectEntered.AddListener(AddMagazine);
         _ammoSocket.selectExited.AddListener(RemoveMagazine);
     }
