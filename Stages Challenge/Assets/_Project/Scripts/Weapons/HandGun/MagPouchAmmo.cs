@@ -22,6 +22,7 @@ public class MagPouchAmmo : MonoBehaviour
         if(!_socket.hasSelection)
         {
             _currentInstance.transform.SetParent(null);
+            _currentInstance = null;
             _currentInstance = Instantiate(_ammoPrefab, _socket.attachTransform);
         }
     }

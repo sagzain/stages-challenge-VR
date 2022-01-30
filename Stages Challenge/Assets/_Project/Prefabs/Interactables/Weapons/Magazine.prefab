@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullets: 6
+  _timeToDespawn: 10
 --- !u!1001 &3407284094527737526
 PrefabInstance:
   m_ObjectHideFlags: 0

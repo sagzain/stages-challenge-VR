@@ -9,6 +9,7 @@ public class HandGun : Weapon
 
     void Start()
     {
+        _currentMagazine = _ammoSocket.firstInteractableSelected.transform.gameObject.GetComponent<Magazine>();
         _ammoSocket.selectEntered.AddListener(AddMagazine);
         _ammoSocket.selectExited.AddListener(RemoveMagazine);
     }
@@ -27,12 +28,14 @@ public class HandGun : Weapon
 
     public void AddMagazine(SelectEnterEventArgs args)
     {
-       _currentMagazine = args.interactableObject.transform.gameObject.GetComponent<Magazine>();
+        _currentMagazine = args.interactableObject.transform.gameObject.GetComponent<Magazine>();
+        _currentMagazine.transform.SetParent(transform);
         ReloadWeapon();
     }
 
     public void RemoveMagazine(SelectExitEventArgs args)
     {
+        _currentMagazine.transform.SetParent(null);
         _currentMagazine = null;
         ReloadWeapon();
     }

@@ -4,8 +4,8 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyAgent : Enemy
 {
-    [Range(1,10)]
-    [SerializeField] private int _movementSpeed;
+    [Range(0f,10f)]
+    [SerializeField] private float _movementSpeed;
     
     private NavMeshAgent _navMesh;
 
