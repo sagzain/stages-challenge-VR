@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f1928e0767d1fc4da18673f9425e110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ammoPrefab: {fileID: 9123981746472225354, guid: b4eb6783505906f46b09a39c9e2d3737, type: 3}
+  _ammoPrefab: {fileID: 5897463550452565244, guid: b7c40fafcfb1f3e4c8df42dfcf921c8d, type: 3}
 --- !u!1 &6149735565900821366
 GameObject:
   m_ObjectHideFlags: 0

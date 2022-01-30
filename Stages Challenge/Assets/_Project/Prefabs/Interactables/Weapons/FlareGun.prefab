@@ -105,7 +105,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4950996490350312584
+--- !u!114 &3250352838088316508
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,16 +114,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2128847927404691406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6f2d03c64ebf64a813e343f121a5e4, type: 3}
+  m_Script: {fileID: 11500000, guid: aa7ab563d30c57b4d803c0e9a4563b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _output: {fileID: 7007359939402569459}
-  _ammo: 1
+  _shotPrefab: {fileID: 6570632114835290030, guid: 66585c42a7049f240a90a3ffded038ea, type: 3}
   _shootSound: {fileID: 8300000, guid: 0f01458ab91c1ac4883d0e6e549bff26, type: 3}
   _emptySound: {fileID: 8300000, guid: 33b4f082caddfbd479b447561a4339b4, type: 3}
   _reloadSound: {fileID: 8300000, guid: 83c52e0124588cb41b7c1c200f457a50, type: 3}
-  _pickUpSound: {fileID: 8300000, guid: f27dd859701e20140ada74e809779ed9, type: 3}
-  _bulletPrefab: {fileID: 6570632114835290030, guid: 66585c42a7049f240a90a3ffded038ea, type: 3}
+  _pickupSound: {fileID: 8300000, guid: f27dd859701e20140ada74e809779ed9, type: 3}
+  _flarePrefab: {fileID: 4814323756392296605, guid: 1c357d5524ec1fe4bb9746d1624b7eea, type: 3}
 --- !u!114 &8358770805042083245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4950996490350312584}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GunShooting, Assembly-CSharp
         m_MethodName: GrabGun
         m_Mode: 1
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4950996490350312584}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GunShooting, Assembly-CSharp
         m_MethodName: Shoot
         m_Mode: 1
