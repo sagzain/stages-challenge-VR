@@ -9,12 +9,13 @@ public class Enemy : MonoBehaviour
     [Range(2,10)]
     [SerializeField] private int _timeToDespawn;
 
-
-    private Animator _animator;
+    protected bool _isDead;
+    protected Animator _animator;
 
     void Awake()
     {
         _animator = GetComponent<Animator>();
+        _isDead = false;
     }
 
     public void Death(int layer)
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
             break;
         }
 
+        _isDead = true;
         StartCoroutine(Despawn());
     }
 

@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 957c7411bb192154e9e11efbf60e552d, type: 2}
 --- !u!1001 &17506224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2684,6 +2684,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2049157502}
     m_Modifications:
     - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2925,6 +2929,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2049157502}
     m_Modifications:
+    - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -4136,6 +4144,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2049157502}
     m_Modifications:
     - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4149,7 +4161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497775134412264, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4497775134412264, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -5910,6 +5922,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2049157502}
     m_Modifications:
     - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -6188,7 +6204,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1176485806
 BoxCollider:
@@ -7159,6 +7175,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2049157502}
     m_Modifications:
+    - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -8567,6 +8587,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2049157502}
     m_Modifications:
+    - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -10942,6 +10966,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2049157502}
     m_Modifications:
     - target: {fileID: 1301431994231232, guid: f3b23b3a049ad9540893ad5f25c046a6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301431994231232, guid: f3b23b3a049ad9540893ad5f25c046a6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -11261,6 +11289,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2049157502}
     m_Modifications:
+    - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1071021786458250, guid: 01587ba97fe24a446b3e52a619fad9a8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295

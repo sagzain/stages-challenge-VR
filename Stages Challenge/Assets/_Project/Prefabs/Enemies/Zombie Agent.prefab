@@ -22,6 +22,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1998792340627836699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6547015320405951436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc7fc4f0bb358249ae3d2334e548161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _points: 100
+  _timeToDespawn: 2
+  _target: {fileID: 0}
+  _movementSpeed: 1
 --- !u!1001 &8287536431261130177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77,7 +93,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie Agent
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 263523416242434890, guid: d3ab6d285a49b4643aae2a57e863b3e2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d3ab6d285a49b4643aae2a57e863b3e2, type: 3}
 --- !u!1 &6547015320405951436 stripped
 GameObject:
