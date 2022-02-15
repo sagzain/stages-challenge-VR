@@ -487,10 +487,10 @@ HingeJoint:
   m_GameObject: {fileID: 1513383092194746}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: -0.2, y: 0.05, z: 0}
-  m_Axis: {x: 0, y: 90, z: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 44.52619, y: 9.85383, z: -57.97787}
+  m_ConnectedAnchor: {x: -5.0144706, y: 3.894, z: -17.856636}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -503,8 +503,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -180
-    max: -45
+    min: 0
+    max: 120
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -754,10 +754,10 @@ HingeJoint:
   m_GameObject: {fileID: 1517837327537228}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0.2, y: -0.05, z: 0}
-  m_Axis: {x: 0, y: 90, z: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 44.12572, y: 9.753831, z: -57.9781}
+  m_ConnectedAnchor: {x: -5.286991, y: 3.894, z: -16.935541}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -770,8 +770,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 45
-    max: 180
+    min: 0
+    max: 120
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -1021,10 +1021,10 @@ HingeJoint:
   m_GameObject: {fileID: 1584455631396606}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: -0.2, y: 0.05, z: 0}
-  m_Axis: {x: 0, y: 90, z: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 44.5372, y: 8.753831, z: -57.87799}
+  m_ConnectedAnchor: {x: -4.8957853, y: 2.574, z: -17.835339}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1037,8 +1037,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -180
-    max: -45
+    min: 0
+    max: 120
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -1288,10 +1288,10 @@ HingeJoint:
   m_GameObject: {fileID: 1893869776700284}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0.2, y: -0.05, z: 0}
-  m_Axis: {x: 0, y: 90, z: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 44.11431, y: 8.653831, z: -57.877895}
+  m_ConnectedAnchor: {x: -5.1755567, y: 2.574, z: -16.88833}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1304,8 +1304,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 45
-    max: 180
+    min: 0
+    max: 120
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -1614,7 +1614,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.06499999, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 44.534042, y: 9.083831, z: -57.86629}
+  m_ConnectedAnchor: {x: -4.95142, y: 3.03, z: -17.597563}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
@@ -2173,7 +2173,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.06499999, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 44.117596, y: 9.083831, z: -57.865967}
+  m_ConnectedAnchor: {x: -5.092688, y: 3.03, z: -17.118214}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
