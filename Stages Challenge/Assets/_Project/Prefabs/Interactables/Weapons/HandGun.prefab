@@ -307,8 +307,8 @@ MonoBehaviour:
   _reloadSound: {fileID: 8300000, guid: 83c52e0124588cb41b7c1c200f457a50, type: 3}
   _pickupSound: {fileID: 8300000, guid: f27dd859701e20140ada74e809779ed9, type: 3}
   _ammoSocket: {fileID: 8496973654605417477}
---- !u!64 &1174786832478443657
-MeshCollider:
+--- !u!65 &5359289375648850516
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -317,12 +317,24 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2959467708922500008, guid: d358defce9b1cdf459df11e7997fc56b, type: 3}
---- !u!64 &4679286790139272502
-MeshCollider:
+  serializedVersion: 2
+  m_Size: {x: 0.84528846, y: 7.696348, z: 0.7842325}
+  m_Center: {x: 0.0012011239, y: 1.1217562, z: 3.6791384}
+--- !u!65 &7969609050812256039
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8498159779365260892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1254466, y: 2.242918, z: 2.9295094}
+  m_Center: {x: -0.004189964, y: -1.1506919, z: 1.7893212}
+--- !u!65 &5265623345860076367
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -331,10 +343,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5964940218898284536, guid: d358defce9b1cdf459df11e7997fc56b, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1.0242758, y: 7.5493536, z: 1.2838718}
+  m_Center: {x: -0.004466762, y: 1.2646418, z: 4.448395}
 --- !u!1 &3322468594061447098
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2228943676678089510}
   - component: {fileID: 8496973654605417477}
-  - component: {fileID: 931971522084356755}
+  - component: {fileID: 3631888344656616110}
   m_Layer: 0
   m_Name: MagazineSocket
   m_TagString: Untagged
@@ -449,19 +460,19 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!135 &931971522084356755
-SphereCollider:
+--- !u!65 &3631888344656616110
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5436349313399558251}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.5
-  m_Center: {x: 0, y: -0.75, z: -0.5}
+  m_Size: {x: 1.2176042, y: 1.1447108, z: 2.2358682}
+  m_Center: {x: 0.036597412, y: -0.5801414, z: -0.5858804}
 --- !u!1 &7897582277487247688
 GameObject:
   m_ObjectHideFlags: 0

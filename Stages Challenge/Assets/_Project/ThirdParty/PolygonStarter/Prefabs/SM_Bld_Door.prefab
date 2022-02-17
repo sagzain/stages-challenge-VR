@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 8747568210486762184}
   - component: {fileID: 7006148072147929481}
   - component: {fileID: 7913044802666872989}
+  - component: {fileID: 3055393926772762290}
+  - component: {fileID: 8853147936731310471}
   m_Layer: 0
   m_Name: SM_Bld_Door_Knob
   m_TagString: Untagged
@@ -113,6 +115,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3055393926772762290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332983441680912733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.762699, y: 11.762636, z: 11.887388}
+  m_Center: {x: -93.09644, y: 106.33649, z: -10.332609}
+--- !u!65 &8853147936731310471
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332983441680912733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.762699, y: 11.762636, z: 11.887388}
+  m_Center: {x: -93.09644, y: 106.3365, z: 10.33261}
 --- !u!1 &4720353385644037953
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +152,7 @@ GameObject:
   - component: {fileID: 1009812124175778061}
   - component: {fileID: 8702377782428616200}
   - component: {fileID: 9029302191870695060}
+  - component: {fileID: 3642236486483433833}
   m_Layer: 0
   m_Name: SM_Bld_Door_Frame
   m_TagString: Untagged
@@ -194,3 +223,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3642236486483433833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4720353385644037953}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 102.52984, y: 222.43484, z: 12.928222}
+  m_Center: {x: -51.26486, y: 111.21745, z: -1.5804946e-12}
