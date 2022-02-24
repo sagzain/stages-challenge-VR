@@ -370,7 +370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3322468594061447098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -1.15}
+  m_LocalPosition: {x: -0, y: 1.15, z: -0.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2228943676678089510}
@@ -454,11 +454,11 @@ MonoBehaviour:
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-  m_ShowInteractableHoverMeshes: 1
+  m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
   m_SocketActive: 1
-  m_InteractableHoverScale: 1
+  m_InteractableHoverScale: 0
   m_RecycleDelayTime: 1
 --- !u!65 &3631888344656616110
 BoxCollider:
@@ -468,11 +468,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5436349313399558251}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2176042, y: 1.1447108, z: 2.2358682}
-  m_Center: {x: 0.036597412, y: -0.5801414, z: -0.5858804}
+  m_Size: {x: 1, y: 1.5, z: 2}
+  m_Center: {x: 0.05, y: -0.8544163, z: -0.5858803}
 --- !u!1 &7897582277487247688
 GameObject:
   m_ObjectHideFlags: 0

@@ -34,4 +34,9 @@ public class Magazine : MonoBehaviour
             StartCoroutine(Despawn());
         }
     }
+
+    public void DropMagazine()
+    {
+        transform.SetParent(null);
+    }
 }

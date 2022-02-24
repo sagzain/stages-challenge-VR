@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -37,11 +38,11 @@ public class EnemySpawner : MonoBehaviour
     void SpawnSingleEnemy()
     {
         int index = Random.Range(0, _spawnPoints.Count);
-        var randomPosition = Random.insideUnitCircle;
-        Vector3 spawnPoint = new Vector3(_spawnPoints[index].position.x + randomPosition.x, _initialPosY, _spawnPoints[index].position.x + randomPosition.y);
+        // var randomPosition = Random.insideUnitCircle;
+        // Vector3 spawnPoint = new Vector3(_spawnPoints[index].position.x + randomPosition.x, _initialPosY, _spawnPoints[index].position.x + randomPosition.y);
 
         var enemy = PoolManager.Instance.Spawn(_enemyPrefab);
-        enemy.transform.position = spawnPoint;
-        enemy.transform.SetParent(_spawnPoints[index], false);
+        // enemy.GetComponent<NavMeshAgent>().Warp(Vector3.zero);
+        enemy.transform.SetParent(_spawnPoints[index], true);
     }
 }
