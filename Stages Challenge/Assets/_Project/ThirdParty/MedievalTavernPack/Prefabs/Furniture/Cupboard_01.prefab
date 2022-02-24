@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 2611320751434636110}
   - component: {fileID: 32435607424403134}
   - component: {fileID: 1502898051603771502}
+  - component: {fileID: 5986974612899683534}
   m_Layer: 0
   m_Name: Cupboard_01
   m_TagString: Untagged
@@ -167,8 +168,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.92068905, y: 0.031103143, z: 0.40668008}
-  m_Center: {x: 0.0010932735, y: 0.109191895, z: -0.021659901}
+  m_Size: {x: 0.920689, y: 0.059441276, z: 0.40668008}
+  m_Center: {x: 0.0010932508, y: 0.12336098, z: -0.021659898}
 --- !u!65 &7822536691940212647
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -247,6 +248,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9268826, y: 0.018978912, z: 0.40668008}
   m_Center: {x: -0.00078698003, y: 0.845, z: -0.021659901}
+--- !u!65 &5986974612899683534
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458342421300234}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.83926433, y: 0.021543503, z: 0.35935333}
+  m_Center: {x: -0.0037140083, y: 0.41024047, z: -0.045322277}
 --- !u!1 &1513383092194746
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +724,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -802,7 +816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4172125173491602
 Transform:
   m_ObjectHideFlags: 0
@@ -1069,7 +1083,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4692980664062584
 Transform:
   m_ObjectHideFlags: 0
@@ -1231,7 +1245,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1

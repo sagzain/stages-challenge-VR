@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1001453860863301709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4801019760451644567}
+  - component: {fileID: 2853372310955586417}
+  m_Layer: 0
+  m_Name: Outdoor Knob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4801019760451644567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001453860863301709}
+  m_LocalRotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 1652475644606749434}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2853372310955586417
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001453860863301709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 15, z: 15}
+  m_Center: {x: -93.09644, y: 106.3365, z: 10.33261}
 --- !u!1 &2136137218135507008
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,6 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652475644606749434}
   - component: {fileID: 1617235485387700514}
+  - component: {fileID: 4573797488695160318}
   - component: {fileID: 4464527328349833068}
   - component: {fileID: 7071612621805299449}
   m_Layer: 0
@@ -32,6 +77,8 @@ Transform:
   m_Children:
   - {fileID: 1009812124175778061}
   - {fileID: 8747568210486762184}
+  - {fileID: 4135757426900580843}
+  - {fileID: 4801019760451644567}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -51,6 +98,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &4573797488695160318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136137218135507008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0600928, y: 2.2338457, z: 0.09487878}
+  m_Center: {x: -0.51021266, y: 1.1024607, z: 0.005057859}
 --- !u!114 &4464527328349833068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,7 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
   m_Colliders:
-  - {fileID: 3055393926772762290}
+  - {fileID: 6283326452043308198}
+  - {fileID: 2853372310955586417}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -132,7 +193,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -179,7 +240,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 1, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -3.0371687, y: 2.77075, z: -13.786152}
+  m_ConnectedAnchor: {x: 0, y: 1, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -214,8 +275,6 @@ GameObject:
   - component: {fileID: 8747568210486762184}
   - component: {fileID: 7006148072147929481}
   - component: {fileID: 7913044802666872989}
-  - component: {fileID: 3055393926772762290}
-  - component: {fileID: 8853147936731310471}
   m_Layer: 0
   m_Name: SM_Bld_Door_Knob
   m_TagString: Untagged
@@ -286,32 +345,50 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3055393926772762290
+--- !u!1 &4653514417397862775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4135757426900580843}
+  - component: {fileID: 6283326452043308198}
+  m_Layer: 0
+  m_Name: Indoor Knob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4135757426900580843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4653514417397862775}
+  m_LocalRotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 1652475644606749434}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6283326452043308198
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2332983441680912733}
+  m_GameObject: {fileID: 4653514417397862775}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 11.762699, y: 11.762636, z: 11.887388}
+  m_Size: {x: 15, y: 15, z: 15}
   m_Center: {x: -93.09644, y: 106.33649, z: -10.332609}
---- !u!65 &8853147936731310471
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2332983441680912733}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.762699, y: 11.762636, z: 11.887388}
-  m_Center: {x: -93.09644, y: 106.3365, z: 10.33261}
 --- !u!1 &4720353385644037953
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +400,6 @@ GameObject:
   - component: {fileID: 1009812124175778061}
   - component: {fileID: 8702377782428616200}
   - component: {fileID: 9029302191870695060}
-  - component: {fileID: 3642236486483433833}
   m_Layer: 0
   m_Name: SM_Bld_Door_Frame
   m_TagString: Untagged
@@ -394,16 +470,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3642236486483433833
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4720353385644037953}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 102.52984, y: 222.43484, z: 12.928222}
-  m_Center: {x: -51.26486, y: 111.21745, z: -1.5804946e-12}
